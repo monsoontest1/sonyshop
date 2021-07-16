@@ -1,0 +1,56 @@
+---
+title: Order Page
+layout: default
+---
+
+<div id="site" class="container my-4">
+	<div id="content" class="card card-body">
+		<h1 class="text-center" id="full-site">Your Order</h1>
+		<div class="table-responsive text-nowrap">
+			<table id="checkout-cart" class="shopping-cart table table-bordered">
+				<thead>
+					<tr>
+						<th scope="col">Item</th>
+						<th scope="col">Qty</th>
+						<th scope="col">Price</th>
+					</tr>
+				</thead>
+				<tbody>
+				
+				</tbody>
+			</table>
+			<div id="pricing">
+				
+				<p id="shipping" style="display: none;">
+					<strong>Shipping</strong>: <span id="sshipping"></span>
+				</p>
+				
+				<p id="sub-total">
+					<strong>Total</strong>: <span id="stotal"></span>
+				</p>
+			</div>
+		 
+			<div id="user-details">
+				
+				<div id="user-details-content"></div>
+			</div>
+			<!-- <form id="paypal-form" action="" method="post">
+				<input type="hidden" name="cmd" value="_cart" />
+				<input type="hidden" name="upload" value="1" />
+				<input type="hidden" name="business" value="" />
+					
+				<input type="hidden" name="currency_code" value="" />
+				<input type="submit" id="paypal-btn" class="btn" value="Pay with PayPal" />
+			</form>	 -->
+			
+		</div> 
+		<div class="form">
+			<a class="btn btn-info btn-md rounded-pill email_checkout">Order through Email</a>
+			{% if site.mobile and site.mobile != '' %}
+			<a class="btn btn-info btn-md rounded-pill whatsapp_checkout">Order through Whatsapp</a>
+			{% else %}
+			<a class="btn btn-info btn-md rounded-pill">Whatsapp not available</a>
+			{% endif %}
+		</div>
+	</div>
+</div>

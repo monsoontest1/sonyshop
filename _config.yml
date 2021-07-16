@@ -1,0 +1,35 @@
+title: "Sony Shop"
+url: "https://monsoonmalabar.com/sonyshop"
+email: "justinechacko1@gmail.com"
+markdown: kramdown
+mobile: "919633464330"
+country: "India"
+currency_code: "INR"
+location: "12.039674399999999,75.4419721"
+sass:
+  sass_dir: _sass
+  style: compressed
+collections:
+  products:
+    output: true
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: product
+  - scope:
+      type: products
+    values:
+      layout: post
+plugins_dir:
+  - jekyll-sitemap
+  - jekyll-paginate
+encoding: UTF-8
+permalink: /products/:title/
+paginate: 10
+paginate_path: 'page/:num/'
+favicon: "https://i.imgur.com/ze3xYuO.png"
+paypal: 
+fb_appid: "830134404085135"
+analytics: 
+adsense: 
